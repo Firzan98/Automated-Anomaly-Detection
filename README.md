@@ -15,7 +15,7 @@ The rest of the columns are predictors.
 4. Column y : Represents our output variable which we aim to accurately predict. It represents the presence of anomalies at that point in time.
 
 
-A. Model Building
+## A. Model Building
 Our project was built with the aim of builing a model capable of predicting the existance of an anomaly.
 I have first checked the data and found no correlation between the time variable and our output variable, hence i dropped the time column and converted the dataset into a crosssectional dataset.
 Exploratory Data Analysis was performed which revealed the high degree of class imbalance and skewness of features.
@@ -28,13 +28,13 @@ We fine tuned the hyperparameters for each model by running multiple CrossValida
 We calculated the performance metrics for each model and compared them to find the best model among the 3.
 This led us to pick the Random Forest as our Model for this Classification Problem
 
-B. Model Deployment
+## B. Model Deployment
 We picked the real time inference method for deploying our model.
 In our deployed model we created pipelines to combine feature engineering and implementation of the model.
 We also created a pipeline for hyperparameter tuning.
 We constructed all the nessessary architectures involved to deploying the model.
 
-C. Links 
+## C. Links 
 1. The Endpoint the model is saved in is:
 
 anomanly-rfc-pipeline-real-time-2024-03-28-12-05-29-794
